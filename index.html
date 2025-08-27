@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanWear</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo-ico.svg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <img class="logo" src="assets/logo.svg" alt="Logo" />
+          <div class="links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="#">Novidades</a></li>
+              <li><a href="#">Promoções</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-search">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Digite o produto"
+          />
+          <button class="search-button">Buscar</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-slider">
+      <button id="voltar-btn">
+        <img src="assets/play-svgrepo-com esquerda.svg" />
+      </button>
+      <div class="container-img">
+        <img
+          class="slider on slider-pequena"
+          src="assets/Nova pasta/Banner1 - Mobile.png"
+          srcset="assets/Nova pasta/Banner1 - Mobile.png 400w, assets/Nova pasta/Banner1 - Desktop.png 700w"
+          sizes="(max-width: 400px) 100vw, (max-width: 700px) 100vw, 100vw"
+          alt="Descrição do slide"
+        />
+        <img
+          class="slider slider-pequena"
+          src="assets/Nova pasta/Banner3 - mobile.png"
+          srcset="assets/Nova pasta/Banner3 - mobile.png 400w, assets/Nova pasta/Banner3 - desktop.png 700w"
+          sizes="(max-width: 400px) 100vw, (max-width: 700px) 100vw, 100vw"
+          alt="Descrição do slide"
+        />
+        <img
+          class="slider slider-pequena"
+          src="assets/Nova pasta/Banner2 - mobile.png"
+          srcset="assets/Nova pasta/Banner2 - mobile.png 400w, assets/Nova pasta/Banner2 - desktop.png 700w"
+          sizes="(max-width: 400px) 100vw, (max-width: 700px) 100vw, 100vw"
+          alt="Descrição do slide"
+        />
+        <img src="assets/foto1.png" class="slider on slider-grande" />
+        <img src="assets/foto2.png" class="slider slider-grande" />
+        <img src="assets/foto3.png" class="slider slider-grande" />
+      </div>
+      <button id="avancar-btn">
+        <img src="assets/play-svgrepo-com.svg" />
+      </button>
+    </section>
+
+    <section class="categoria">
+      <h2>Selecione uma categoria:</h2>
+      <div class="categorias-list">
+        <a href="#">
+          <img src="assets/categoria/shirt.svg" />
+          <p>Camiseta</p>
+        </a>
+        <a href="#">
+          <img src="assets/categoria/shoe.svg" />
+          <p>Calçados</p>
+        </a>
+        <a href="#">
+          <img src="assets/categoria/jeans.svg" />
+          <p>Calça</p>
+        </a>
+        <a href="#">
+          <img src="assets/categoria/glasses.svg" />
+          <p>Óculos</p>
+        </a>
+        <a href="#">
+          <img src="assets/categoria/coat.svg" />
+          <p>Casacos</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+      <h2>Produtos em Destaque</h2>
+      <div class="card-produtos">
+        <div class="produto">
+          <img src="assets/produtos/camiseta.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Camiseta Pac-Man</h3>
+            <p>Camiseta retro gamer.</p>
+            <span class="preco">R$ 109,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/Tenis.png" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Tênis Rocky</h3>
+            <p>Tênis confortável e estiloso.</p>
+            <span class="preco">R$ 99,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/calça.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Calça Jeans</h3>
+            <p>Calça jeans confortável e estilosa.</p>
+            <span class="preco">R$ 89,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/casaco.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Casaco Quente</h3>
+            <p>Casaco confortável para o inverno.</p>
+            <span class="preco">R$ 199,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/oculos.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Óculos</h3>
+            <p>Óculos proteção UV.</p>
+            <span class="preco">R$ 79,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/bolsa.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Bolsa Ecológica</h3>
+            <p>Bolsa feita de materiais recicláveis.</p>
+            <span class="preco">R$ 59,99</span>
+            <button>Ver mais</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="novidades">
+      <h2>Novidades</h2>
+      <div class="card-produtos">
+        <div class="produto">
+          <img src="assets/produtos/relogio.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Relógio Elegante</h3>
+            <p>Relógio de pulso com design sofisticado.</p>
+            <span class="preco">R$ 299,99</span>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/produtos/terno.jpg" alt="Produto 1" />
+          <div class="detalhes">
+            <h3>Terno Clássico</h3>
+            <p>Terno masculino de alta qualidade.</p>
+            <span class="preco">R$ 499,99</span>
+            <button>Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="facilidades">
+      <h2>Conheça todas as nossas facilidades</h2>
+      <div class="facilidades-card">
+        <div class="facilidades-list">
+          <img src="assets/facilidades/pix.svg" alt="Pagamento" />
+          <h3>PAGUE PELO PIX</h3>
+          <p>Facilidade de pagamento com desconto.</p>
+        </div>
+
+        <div class="facilidades-list">
+          <img
+            src="assets/facilidades/sustentabilidade.svg"
+            alt="Sustentabilidade"
+          />
+          <h3>SUSTENTABILIDADE</h3>
+          <p>Compromisso com práticas sustentáveis.</p>
+        </div>
+
+        <div class="facilidades-list">
+          <img
+            src="assets/facilidades/reciclagem.svg"
+            alt="Embalagens Recicláveis"
+          />
+          <h3>EMBALAGENS RECICLÁVEIS</h3>
+          <p>Utilização de materiais recicláveis em nossas embalagens.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="news">
+        <h2>Inscrever-se</h2>
+        <p>
+          Quer receber nossas novidades, promoções exclusivas e 10% OFF na
+          primeira compra? Cadastre-se!
+        </p>
+        <div class="newsletter-input-container">
+          <input
+            class="newsletter-input"
+            type="email"
+            placeholder="Digite seu e-mail"
+          />
+          <button class="newsletter-button">Inscrever-se</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <img class="logo" src="assets/logo.svg" alt="Logo" />
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="endereco">
+          <p>
+            <img src="assets/footer/point.svg" alt="Endereço" /> Rua Exemplo,
+            123 - Centro - Ceará - CE
+          </p>
+          <p>
+            <img src="assets/footer/@.svg" alt="Email" />
+            emailexemplo@dominio.com
+          </p>
+          <p>
+            <img src="assets/footer/phone.svg" alt="Telefone" /> (85) 1234-5678
+          </p>
+        </div>
+        <div class="social-media">
+          <a href="#"
+            ><img src="assets/footer/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="https://github.com/FulepoFreires?tab=repositories"
+            ><img src="assets/footer/github.svg" alt="GitHub"
+          /></a>
+          <a href="https://br.linkedin.com/in/felipe-freires-b253ba355"
+            ><img src="assets/footer/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>&copy; 2025 My Store. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
