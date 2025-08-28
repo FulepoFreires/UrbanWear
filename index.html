@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UrbanWear</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/logo-ico.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo-ico.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -166,7 +166,7 @@
           </div>
         </div>
         <div class="produto">
-          <img src="assets/produtos/terno.pg.jpg" alt="Produto 1" />
+          <img src="assets/produtos/terno.pg.jpg  " alt="Produto 1" />
           <div class="detalhes">
             <h3>Terno Clássico</h3>
             <p>Terno masculino de alta qualidade.</p>
@@ -266,6 +266,38 @@
         <p>&copy; 2025 My Store. Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Botão flutuante de voltar ao topo -->
+    <button id="scrollTopBtn" title="Voltar ao topo">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="10" fill="#9353FF" />
+        <polyline points="16 12 12 8 8 12" />
+        <line x1="12" y1="16" x2="12" y2="8" />
+      </svg>
+    </button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            scrollTopBtn.classList.add("show");
+          } else {
+            scrollTopBtn.classList.remove("show");
+          }
+        });
+        scrollTopBtn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+    </script>
   </body>
 </html>
